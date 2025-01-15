@@ -11,7 +11,7 @@
     bottom right;
 }
 
-@media (main-width: 70rem) {
+@media (min-width: 70rem) {
   .body {
     background-image: url("/assets/images/bg-pattern-top-desktop.svg"),
       url("/assets/images/bg-pattern-bottom-desktop.svg");
@@ -19,8 +19,21 @@
 }
 
 @layer utilities {
-  @media (main-width: 70rem) {
-    .review {
+  @media (min-width: 70rem) {
+    .card:nth-child(2) {
+      margin-left: 3rem;
+    }
+
+    .card:nth-child(3) {
+      margin-left: 6rem;
+    }
+
+    .cardTestimonial:nth-child(2) {
+      margin-top: 1rem;
+    }
+
+    .cardTestimonial:nth-child(3) {
+      margin-top: 3rem;
     }
   }
 }
